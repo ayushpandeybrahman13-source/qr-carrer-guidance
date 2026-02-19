@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QR Code - Career Guidance by Ayush</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <style>
+        body{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+            background:#1e3c72;
+            font-family:Arial;
+            color:white;
+            flex-direction:column;
+        }
+        #qrcode{
+            margin-top:20px;
+            padding:15px;
+            background:white;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Scan to Visit My Website 🚀</h2>
+
+<div id="qrcode"></div>
+
+<script>
+var qrcode = new QRCode(document.getElementById("qrcode"), {
+    text: "https://ayushpandeybrahman13-source.github.io/career-guidance-by-ayush/",
+    width: 300,
+    height: 300
+});
+</script>
+
+</body>
+</html>
